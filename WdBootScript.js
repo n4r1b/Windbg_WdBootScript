@@ -44,7 +44,6 @@ class MpEbGlobals
             host.createPointerObject(add(mpGlobals, 0x78), "nt", "unsigned __int64 *");
         this.TotalModulesEntryLen =
             host.createPointerObject(add(mpGlobals, 0x80), "nt", "unsigned long *").dereference();      
-        // Couldn't find a way to create a PointerObject of type char[32]
         this.EntryPointWdFilter =
             this.EntryPointWdFilter = host.memory.readMemoryValues(add(mpGlobals, 0x84), 32, 1, false); 
         this.FlagWdOrMp = 
