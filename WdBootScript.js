@@ -1,5 +1,7 @@
 "use strict";
 
+// I'm not providing a contextInheritor for most of the debugger API calls, this should be changed at some point 
+
 function add(address, val) 
 {
     return host.Int64(address).add(val);
