@@ -13,7 +13,7 @@ This was just for fun and to learn a bit on the Javascript scripting debugger fo
 This extension will display the type MpEbGlobals, the data returned by this extension is 
 based on my research done on the WdBoot driver (https://n4r1b.netlify.com/en/posts/2019/10/understanding-wdboot-windows-defende-elam/)
 
-!["wdBootGlobals"](https://cdn1.imggmi.com/uploads/2019/11/5/f6f5201b39c6742ea32482cc7bf662a1-full.png)
+!["wdBootGlobals"](img/Globals.png)
 
 ```
 !wdBootSig([AddrOfData], [SizeOfData])
@@ -22,7 +22,7 @@ based on my research done on the WdBoot driver (https://n4r1b.netlify.com/en/pos
 This extension will display all the signatures that WdBoot will load to check loaded drivers against them. The address and the size
 can be obtained from the function `MpEbLoadSignatures` as out params (`rdx` and `r8`).
 
-!["wdBootSig"](https://cdn1.imggmi.com/uploads/2019/11/5/6cbfd86e0bf1f4d8633f63962db9e42b-full.png)
+!["wdBootSig"](img/Signatures.png)
 
 ### Known Issues
 
